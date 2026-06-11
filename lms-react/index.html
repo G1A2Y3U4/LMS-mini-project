@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnHub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="app-header">
+        <div class="nav-inner">
+          <a href="#home" class="brand">LearnHub</a>
+          <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation">&#9776;</button>
+          <nav class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#courses" class="nav-link">Courses</a>
+            <a href="#dashboard" class="nav-link">Dashboard</a>
+            <a href="#profile" class="nav-link">Profile</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="main-content" class="main-content"></main>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <div>
+            <h3>LearnHub</h3>
+            <p>Build skills with interactive lessons and local storage progress tracking.</p>
+          </div>
+          <div>
+            <h3>Quick links</h3>
+            <a href="#home">Home</a><br />
+            <a href="#courses">Courses</a><br />
+            <a href="#dashboard">Dashboard</a>
+          </div>
+          <div>
+            <h3>Follow us</h3>
+            <a href="#">GitHub</a><br />
+            <a href="#">Twitter</a><br />
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer-bottom">� 2026 LearnHub. Built as a beginner-friendly LMS experience.</div>
+      </footer>
+    </div>
+
+    <div id="loading-overlay" class="loader-overlay hidden">
+      <div class="loader"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
