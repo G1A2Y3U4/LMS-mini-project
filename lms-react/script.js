@@ -115,7 +115,7 @@ function renderCourseCard(course) {
 
   return `
     <article class="course-card">
-      <img class="course-image" src="${course.image}" alt="${course.title}" />
+        <img class="course-image" src="${course.image}" alt="${course.title}" loading="lazy" decoding="async" width="900" height="600" />
       <div class="course-body">
         <div class="course-meta">
           <span>${course.instructor}</span>
@@ -294,9 +294,7 @@ function renderHome() {
     ${renderCoursesView()}
   `;
 }
-
 function renderView() {
-  setLoading(true);
   window.requestAnimationFrame(() => {
     let html = "";
 
@@ -315,14 +313,14 @@ function renderView() {
 
     mainContent.innerHTML = html;
     attachHandlers();
-    setLoading(false);
   });
 }
 
+
 function attachHandlers() {
   document.querySelectorAll("button[data-enroll]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const courseId = button.dataset.enroll;
+    button.addEventListener("click", (event) => {
+      const courseId = event.currentTarget.dataset.enroll;
       if (!appState.enrolledCourses.includes(courseId)) {
         appState.enrolledCourses.push(courseId);
         saveState();

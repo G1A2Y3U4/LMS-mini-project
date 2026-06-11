@@ -23,7 +23,7 @@ const courses = [
     description: "Begin Python programming with clean syntax, control flow, and real-world examples.",
     instructor: "Anita Patel",
     lessons: ["Introduction", "Python Syntax", "Data Structures", "Functions & Loops", "Mini Project"],
-    image: "https://images.unsplash.com/photo-1517430816045-df4b7de7fa4c?auto=format&fit=crop&w=800&q=80",
+    image: "src/assets/images/python.jpg",
     details: "Start coding with Python and learn how to build simple programs and solve problems efficiently.",
   },
   {
